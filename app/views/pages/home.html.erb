@@ -1,2 +1,16 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<%# <script>
+    navigator.mediaDevices.getUserMedia({ video: true })
+        .then(function(stream) {
+            var videoElement = document.getElementById('camera-stream');
+            videoElement.srcObject = stream;
+        })
+        .catch(function(error) {
+            console.error('Error accessing camera:', error);
+        });
+</script> %>
+
+<div class="container">
+    <h1>The first scare's free</h1>
+    <p>Hi <%= current_user.email %></p>
+    <%# <video id="camera-stream" class="border border-dark border-2 rounded" autoplay></video> %>
+</div>
